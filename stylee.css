@@ -1,0 +1,55 @@
+:root{
+    --max-width: 1000px;
+    --accent: #4d8cc5;
+    --muted: #6b7280;
+    --bg: #fbfbfd;
+}
+*{box-sizing: border-box;}
+html,body{height:100%;margin:0;font-family: Arial, Helvetica, sans-serif;background:var(--bg);color:#111;}
+.container{max-width:var(--max-width);margin:0 auto;padding:16px;}
+.site-header{background:var(--accent);color:white;}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px;}
+.main-nav a{color:white;text-decoration:none;padding:6px 12px;border-radius:8px;}
+.main-nav a:hover{background:rgba(255,255,255,0.12);text-decoration:underline;}
+.logo img{border-radius:8px;}
+
+
+.hero{padding:28px;background-image:url('');background-size:cover;border-radius:8px;margin-top:12px;}
+.hero h1{margin:0;font-size:32px;}
+.lead{color:var(--muted);font-size:18px;}
+
+
+blockquote{border-left:4px solid var(--accent);margin:16px 0;padding-left:12px;color:#333;}
+q{quotes: '“' '”' '‘' '’';}
+
+
+.about{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-top:16px;}
+.stats table{width:100%;border-collapse:collapse;}
+.stats th, .stats td{border:1px solid #ddd;padding:8px;text-align:left;}
+.stats caption{text-align:left;font-weight:bold;margin-bottom:8px;}
+
+
+.posts .post{background:white;padding:12px;border-radius:8px;margin-top:16px;box-shadow:0 1px 3px rgba(0,0,0,0.06);}
+
+
+.contact form{display:flex;flex-direction:column;gap:8px;background:#fff;padding:12px;border-radius:8px;}
+.contact input, .contact textarea{padding:8px;border:1px solid #ccc;border-radius:6px;font-size:14px;}
+.contact button{background:var(--accent);color:white;padding:8px 12px;border:none;border-radius:6px;cursor:pointer;}
+.contact button:hover{opacity:0.95}
+
+
+code{background:#f3f4f6;padding:2px 6px;border-radius:4px;font-family: monospace;font-size:13px;}
+pre{background:#111;color:#fff;padding:12px;border-radius:6px;overflow:auto;}
+
+
+.site-footer{margin-top:24px;padding:12px 0;text-align:center;color:var(--muted);}
+
+
+.float-left{float:left;margin-right:12px;}
+.clearfix::after{content:'';display:block;clear:both;}
+
+
+@media (max-width:720px){
+    .about{grid-template-columns:1fr;}
+    .header-inner{flex-direction:column;gap:12px;align-items:flex-start;}
+}

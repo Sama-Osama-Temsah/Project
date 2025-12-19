@@ -1,0 +1,380 @@
+
+/* 
+--->CSS sentax:
+
+ selector{
+    property:value;
+    property:value;
+} */
+
+
+
+/* The body selector targets the entire webpage's body element */
+body {
+
+  /* Sets the font family for all text inside the body.
+     'Times New Roman' is the preferred font; 
+     if it's unavailable, the browser will use 'Times' or a generic serif font. */
+     /* that font will become the default font for all text elements inside the body —
+     unless those elements have their own font-family */
+  font-family: 'Times New Roman', Times, serif;
+
+
+  /* Specifies the image file to use as the page background.
+     The file 'background.jpg' should be in the same directory as the CSS file. */
+  /* background-image: url(background.jpg); */
+
+  /* Prevents the background image from repeating horizontally or vertically.
+     By default, images repeat to fill the screen; this stops that behavior. */
+  /* background-repeat: no-repeat; */
+
+  /* Ensures the background image covers the entire page area.
+     The image will scale proportionally to cover the viewport completely,
+     possibly cropping parts of the image to maintain aspect ratio. */
+  /* background-size: cover; */
+
+    /* Sets the background color of the webpage to beige.
+     This color will be visible wherever the background image doesn’t cover. */
+  background-color: beige;
+
+}
+
+
+
+/* .head2 applies to certain headings and lists to give them a consistent stylized look */
+.head2 {
+  /* Underlines text with a dashed line */
+  text-decoration: underline dashed;
+  /* Sets a large font size */
+  font-size: 24px;
+  /* Chooses a classic serif font stack */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* Makes text slightly slanted */
+  font-style: oblique;
+  /* Increases boldness *
+  font-weight: 900;
+  /* Converts lowercase letters to small capitals */
+  font-variant: small-caps;
+  /* Sets text color to semi-transparent red */
+  color: rgba(255, 0, 0, 0.5);
+}
+
+/* Styles all ordered list items (<ol>) with green text */
+ol {
+  color: green;
+}
+
+/* Targets the element with id="id1" (Calculator App list item) and makes it brown */
+#id1 {
+  color: brown;
+}
+
+/* Styles only the <h2> inside the footer */
+footer h2 {
+  color: orange;
+}
+
+/* Styles the main heading (<h1>) of the page */
+h1 {
+  font-size: 200%; /* Makes the text twice as large as normal */
+  color: darkblue; /* Sets dark blue color */
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic; /* Italicizes the heading */
+  font-weight: bold; /* Makes it bold */
+  font-variant: small-caps; /* Converts lowercase to smaller uppercase */
+  /* Adds a double border around the element */
+ border-style: double;
+
+ /* Sets the color of the border to light brown */
+ border-color: #8B4513;
+
+ /* Defines the thickness (width) of the border as 6 pixels */
+  border-width: 6px;
+
+ /* Shorthand for border-width, style, and color — same as writing 
+ border-width:6px; border-style:double; border-color:#8B4513; */
+  border: 6px double #8B4513; 
+
+  /* Adds inner spacing between the border and the h1 text */
+  /* 
+     Long version (individual sides):
+     padding-top: 40px;
+     padding-right: 20px;
+     padding-bottom: 25px;
+     padding-left: 15px;
+
+     The shorthand version below does the same thing in one line.
+     The values go in this order: 
+     TOP | RIGHT | BOTTOM | LEFT
+  */
+  /* padding: 40px 20px 25px 15px;  */
+  /* Top:40px | Right:20px | Bottom:25px | Left:15px */
+
+   padding:20px 30px; 
+ 
+  
+
+   /* Adds outer space between the h1 element and other elements on the page */
+  /*
+     Long version (individual sides):
+     margin-top: 40px;
+     margin-right: 20px;
+     margin-bottom: 25px;
+     margin-left: 15px;
+
+     The shorthand version below combines all four into one line.
+     The order of values is the same as for padding:
+     TOP | RIGHT | BOTTOM | LEFT
+  */
+  margin: 40px 20px 25px 15px;
+ 
+   /* Top:40px | Right:20px | Bottom:25px | Left:15px */
+
+}
+
+/* Styles paragraph text */
+#div1 p {
+  font-size: 100%; /* Normal size text */
+  color: #333333; /* Dark gray color for readability */
+  font-family: Arial, Helvetica, sans-serif; /* Clean sans-serif font */
+  font-style: normal;
+  font-weight: 400; /* Regular weight */
+  font-variant: normal;
+
+    /* Add a border to demonstrate two-value border-width */
+  border-style: solid; /* Solid border line around the paragraph */
+  border-color: teal;  /* Teal-colored border for visibility */
+
+  /* When border-width has two values:
+     - The first value applies to the top and bottom borders.
+     - The second value applies to the left and right borders. */
+  border-width: 4px 6px; /* Top & Bottom: 4px | Left & Right: 6px */
+}
+
+/* Styles the overall table text appearance */
+table {
+  color: darkslategray;
+  font-size: 100%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+    /* Adds a border around the whole table */
+  border-style: solid; /* Solid border line */
+  border-color: navy; /* Dark blue border color */
+
+  /* The border-width property can take up to 4 values:
+     - 1st value → top border
+     - 2nd value → right border
+     - 3rd value → bottom border
+     - 4th value → left border
+     This gives different thicknesses for each side. */
+  border-width: 4px 10px 12px 5px; /* Top:4px, Right:6px, Bottom:5px, Left:6px */
+}
+
+/* Styles table headers (<th>) with a blue monospaced font */
+th {
+  color: blue;
+  font-size: 100%;
+  /* font-family: 'Courier New', Courier, monospace; */
+}
+
+/* Styles table cells (<td>) with a dark red font */
+td {
+  color: darkred;
+  font-size: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Styles all form text (labels, inputs, etc.) */
+form {
+  color: darkgreen;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Normal link style */
+a:link{
+  color:green;
+  text-decoration: none;
+}
+
+/* After the link has been visited */
+a:visited{
+  color:brown;
+}
+
+/* When mouse is over the link */
+a:hover{
+  color:aqua;
+  font-size: 22px;
+}
+
+ /* When the user is clicking */
+a:active{
+  color:black;
+  text-decoration: underline;
+}
+
+/* .div1 styles */
+#div1 {
+  background: #f0f8ff; 
+  border: 2px solid navy;          
+  padding: 15px;            
+  margin: 20px 0;           
+  color: #333;               
+  font-family: Arial, sans-serif; 
+
+   /* Each border side can be styled separately */
+
+  border-top: 5px solid navy; /* A solid blue line on top */
+  border-right: 4px dashed darkorange; /* A dashed orange line on the right */
+  border-bottom: 4px double darkgreen; /* A double green border at the bottom */
+  border-left: 4px dotted crimson; /* A dotted red line on the left */
+
+  /* Together, these four lines show that each side can have a different color and style */
+}
+
+/* Adds styles to h2 only in div1 */
+#div1 h2 {
+  color: navy;
+}
+
+/* flexbox:
+
+  --->If I want to use flexbox I must add display:flex in the container(parent)
+  --->I use flex-direction to determine am I working with a row or with a column.
+  --->If I want to change the position of the boxes I use justify content and align-items.
+   1. row:
+      if Iam working on main axis(x axis)---->justify content.
+      if Iam working on cross axis(y axis)--->align-items.
+                                                                    
+  2. column:                                                         
+     if Iam working on main axis(y axis)---->justify content.
+     if Iam working on cross axis(x axis)--->align-items.
+*/
+
+#flex-container{
+  background: rgb(66, 45, 86);
+  width:800px;
+  height: 200px;
+  margin:10px;
+  padding:10px;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height:400px;
+  justify-content: space-around;
+  align-items: center; 
+  /* flex-flow: row wrap; */
+
+
+ }
+
+#flex-container div{
+  margin:10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  width:200px;
+  height:200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 34px;
+  font-weight: 900;
+  color:rgb(66, 45, 86);
+  
+} 
+
+
+
+/* the display property makes to you change the default display for
+   an element.
+   --->display:inline-block, keeps the elements inline(in the same line)
+       but give them margin */
+/* .block{
+  display: inline-block;
+} */
+
+/* display:none, makes the elements invisible and takes its place in
+   the webpage */
+/* code{
+  display: none;
+}*/
+
+
+h3{
+  display:inline-block;
+}
+
+ol{
+  display:none;
+}
+
+/* 
+  overflow: This controls what happens when the content is bigger 
+  than the box size (width/height). 
+  - overflow: auto; → adds scrollbars only when the content overflows. 
+  In this example, if the text or elements inside the box are too large 
+  to fit, the user will be able to scroll to see the rest.
+*/
+
+.overflow{
+  border:solid red 5px;
+  width: 300px;
+  height:230px;
+  overflow:auto;
+}
+
+.grid-container{
+  background: white;
+  width:700px;
+  height:300px;
+  display:grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-areas: 
+  "header header"
+  "sidebar content1"
+  "footer footer"
+  ;
+  row-gap: 8px;
+  column-gap: 8px;
+  padding:8px;
+  
+
+ 
+}
+
+.header{
+  text-align: center;
+  grid-area:header;
+  background: blue;
+}
+
+.content{
+  text-align: center;
+  grid-area: content1;
+  background: rgb(120, 120, 241);
+
+
+
+}
+
+.sidebar{
+  text-align: center;
+  grid-area: sidebar;
+  background: rgb(152, 152, 197);
+}
+
+.footer{
+  text-align: center;
+  grid-area: footer;
+  color:white;
+  background: rgb(10, 10, 48);
+}
+
+
+
+
+
+
+
+

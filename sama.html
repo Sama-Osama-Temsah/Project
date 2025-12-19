@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Tech Blogger profile page demo for Lab" />
+<title>Tech Blogger - Demo</title>
+<link rel="icon" href="Images/logo.jfif" />
+<link rel="stylesheet" href="stylee.css" />
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+    <div class="logo">
+        <img src="sercodev.png" alt="logo" width="50">
+    </div>
+    <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#posts">Posts</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    </div>
+</header>
+
+    <main class="container">
+    <section id="home" class="hero" role="region" aria-label="Hero">
+    <h1>Alex Doe — Tech Blogger</h1>
+    <p class="lead">Sharing practical web development tips and tutorials.</p>
+    <p>Quick facts: <abbr title="Search Engine Optimization">SEO</abbr>, accessibility, and performance.</p>
+
+    <blockquote cite="https://example.com">
+        “Good code is its own best documentation.” <footer>— Software Guru</footer>
+    </blockquote>
+    </section>
+
+    <section id="about" class="about">
+    <article>
+        <h2>About this blog</h2>
+        <p>This blog focuses on practical front-end techniques. Example of formatting: <strong>important</strong>, <em>emphasis</em>, <del>deprecated</del>, <ins>added</ins>.</p>
+        <p>Inline code example: <code>&lt;header&gt; ... &lt;/header&gt;</code></p>
+        <pre><code>&lt;!doctype html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt; ... &lt;/head&gt;
+    &lt;/html&gt;</code></pre>
+    </article>
+
+    <aside class="stats" aria-label="Post stats">
+        <h3>Post Stats</h3>
+        <table>
+        <caption>Monthly stats</caption>
+        <thead>
+            <tr><th>Month</th><th>Posts</th><th>Views</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Aug</td><td>5</td><td>12,300</td></tr>
+            <tr><td>Sep</td><td>4</td><td>10,200</td></tr>
+            <tr><td>Oct</td><td>6</td><td>15,450</td></tr>
+        </tbody>
+        </table>
+    </aside>
+    </section>
+
+    <section id="posts" class="posts">
+    <article class="post">
+        <h2>Building accessible forms</h2>
+        <p>Short excerpt with a <q>useful tip</q> inside the paragraph.</p>
+    </article>
+    </section>
+
+    <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <form action="#" method="post" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message"></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+    </section>
+    </main>
+
+    <footer class="site-footer">
+    <div class="container">
+    <p>&copy; 2025 Alex Doe — All rights reserved. &nbsp; Contact: <a href="mailto:alex@example.com">alex@example.com</a></p>
+    </div>
+    </footer>
+</body>
+</html>
